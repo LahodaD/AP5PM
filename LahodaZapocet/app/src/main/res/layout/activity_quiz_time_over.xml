@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/violet"
+    tools:context=".QuizTimeOver">
+
+    <TextView
+        android:id="@+id/congratulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="TIME OVER"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/congratulation"
+        android:text="Time is up, the Quiz has ended"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/textMessage"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/correctAnsw"
+            android:text="Correct Answer : 0"
+            android:textStyle="bold"
+            android:textColor="#00C853"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/correctAnsw"
+            android:layout_marginTop="30dp"
+            android:text="Enter Your Name"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textName"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_below="@+id/editText"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
